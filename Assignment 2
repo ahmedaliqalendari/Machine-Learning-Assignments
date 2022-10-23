@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+features = (np.random.random([30,2]) *20) -10
+features1= (features[:,0])
+features2=(features[:,1])
+print (features1)
+print (features2)
+label=(features1+features2)*2
+print(label)
+plt.scatter(features1,label)
+plt.scatter(features2,label)
+plt.show()
